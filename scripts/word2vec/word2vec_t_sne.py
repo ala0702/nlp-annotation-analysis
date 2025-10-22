@@ -60,4 +60,4 @@ chart = alt.Chart(df_final).mark_circle(size=60, opacity=0.8).encode(
     title=f"t-SNE Osadzeń Słów (Word Embeddings) - 100D Skip-gram"
 ).interactive() 
 
-chart.save('../plots/word2vec_tsne_interactive.json')
+chart.save('./plots/word2vec_tsne_interactive.json')

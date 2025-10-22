@@ -1,11 +1,5 @@
-Top 20 najczęstszych słów w całym korpusie
 
-Słowo: rt
-  czasdecyzji -> 0.6395
-  gb -> 0.5533
-  ujdzie -> 0.5455
-  pozdrawiam -> 0.5382
-  tweet -> 0.5296
+Top 20 najczęstszych słów w całym korpusie
 
 Słowo: chyba
   oczywiście -> 0.7922
@@ -28,13 +22,6 @@ Słowo: wiem
   niewiem -> 0.7884
   chyba -> 0.7701
 
-Słowo: xd
-  xdd -> 0.9453
-  haha -> 0.8948
-  nooo -> 0.8524
-  nieee -> 0.8445
-  hehe -> 0.8420
-
 Słowo: masz
   macie -> 0.7912
   widzisz -> 0.7266
@@ -49,19 +36,19 @@ Słowo: skoro
   rzeczywiście -> 0.6348
   rozumiem -> 0.6269
 
-Słowo: mogę
-  potrafię -> 0.8989
-  muszę -> 0.8927
-  chcę -> 0.8846
-  możesz -> 0.8225
-  możecie -> 0.7778
-
 Słowo: kurwa
   chuj -> 0.8825
   mać -> 0.8162
   debilu -> 0.8116
   pierdolę -> 0.8106
   chuja -> 0.7988
+
+Słowo: mogę
+  potrafię -> 0.8989
+  muszę -> 0.8927
+  chcę -> 0.8846
+  możesz -> 0.8225
+  możecie -> 0.7778
 
 Słowo: nikt
   nikogo -> 0.6480
@@ -70,12 +57,12 @@ Słowo: nikt
   ktos -> 0.5818
   któryś -> 0.5599
 
-Słowo: chodzi
-  chodziło -> 0.8338
-  rozumiem -> 0.6070
-  powiesz -> 0.5928
-  porównujesz -> 0.5805
-  domyślam -> 0.5721
+Słowo: siebie
+  swoich -> 0.5819
+  pozostałych -> 0.5684
+  samego -> 0.5582
+  swojego -> 0.5418
+  samych -> 0.5381
 
 Słowo: meczu
   gola -> 0.8105
@@ -84,33 +71,12 @@ Słowo: meczu
   meczem -> 0.7708
   ćwierćfinale -> 0.7669
 
-Słowo: d
-  c -> 0.7335
-  e -> 0.7322
-  s -> 0.6341
-  t -> 0.6239
-  h -> 0.6140
-
-Słowo: siebie
-  swoich -> 0.5819
-  pozostałych -> 0.5684
-  samego -> 0.5582
-  swojego -> 0.5418
-  samych -> 0.5381
-
-Słowo: tt
-  tf -> 0.5888
-  l4 -> 0.5527
-  lm -> 0.5489
-  sn -> 0.5429
-  polkowice -> 0.5373
-
-Słowo: lepiej
-  gorzej -> 0.8083
-  łatwiej -> 0.7124
-  najlepiej -> 0.6688
-  rozsądnie -> 0.6502
-  słabo -> 0.6118
+Słowo: chodzi
+  chodziło -> 0.8338
+  rozumiem -> 0.6070
+  powiesz -> 0.5928
+  porównujesz -> 0.5805
+  domyślam -> 0.5721
 
 Słowo: domu
   matka -> 0.6489
@@ -119,12 +85,12 @@ Słowo: domu
   budynku -> 0.6106
   matką -> 0.6099
 
-Słowo: 1
-  4 -> 0.9219
-  5 -> 0.9036
-  3 -> 0.9022
-  6 -> 0.8984
-  2 -> 0.8945
+Słowo: lepiej
+  gorzej -> 0.8083
+  łatwiej -> 0.7124
+  najlepiej -> 0.6688
+  rozsądnie -> 0.6502
+  słabo -> 0.6118
 
 Słowo: robi
   zrobi -> 0.7793
@@ -133,6 +99,20 @@ Słowo: robi
   robił -> 0.6760
   widzi -> 0.6616
 
+Słowo: grać
+  zagrać -> 0.8695
+  grając -> 0.7904
+  pograć -> 0.7528
+  wygrywać -> 0.7360
+  tańczyć -> 0.7328
+
+Słowo: ludzie
+  młodzi -> 0.7921
+  jedni -> 0.7685
+  niektórzy -> 0.7625
+  bohaterowie -> 0.7472
+  starzy -> 0.7284
+
 Słowo: mieć
   przybierać -> 0.6702
   tworzyć -> 0.6632
@@ -140,146 +120,167 @@ Słowo: mieć
   znaczyć -> 0.6146
   zostać -> 0.6128
 
+Słowo: razem
+  ponownie -> 0.7273
+  samym -> 0.6743
+  innymi -> 0.6582
+  ostatecznie -> 0.6169
+  najpierw -> 0.6048
+
+Słowo: jutro
+  czwartek -> 0.7247
+  sobotę -> 0.7205
+  niedzielę -> 0.7085
+  jutra -> 0.7041
+  piątek -> 0.7021
+
+Słowo: widzę
+  zauważam -> 0.8277
+  widzisz -> 0.7944
+  widze -> 0.7853
+  rozumiem -> 0.7721
+  zauważ -> 0.7079
+
 Top 10 słów dla etykiety 'contains harmful'
 
-Słowo: dekompozycja
-  zmiana -> 0.6329
-  ewolucja -> 0.5903
-  faza -> 0.5669
-  strategia -> 0.5291
-  delegalizacja -> 0.5172
+Słowo: odklejonych
+  glówkach -> 0.6771
+  zasłonek -> 0.6485
+  paździerza -> 0.6211
+  żelek -> 0.6065
+  chusteczek -> 0.6041
 
-Słowo: zaprzaństwo
-  złodziejstwo -> 0.7376
-  kłamstwo -> 0.7181
-  tchórzostwo -> 0.6862
-  polactwo -> 0.6457
-  załgane -> 0.6388
+Słowo: swego
+  swojego -> 0.9323
+  ojca -> 0.7498
+  własnego -> 0.7207
+  wielkiego -> 0.6815
+  syna -> 0.6631
 
-Słowo: fałszowanie
-  oszustwo -> 0.7055
-  wyłudzenia -> 0.7030
-  paserstwo -> 0.6983
-  oszustwa -> 0.6768
-  karalne -> 0.6371
+Słowo: cudowna
+  piękna -> 0.7606
+  boska -> 0.7587
+  idealna -> 0.7115
+  ciekawa -> 0.6715
+  najbrzydsza -> 0.6573
 
-Słowo: cmentarzu
-  przedmieściu -> 0.7354
-  kościele -> 0.7029
-  pomnik -> 0.6678
-  grobem -> 0.6245
-  stadionie -> 0.6031
+Słowo: parodię
+  piosenkę -> 0.6226
+  wersję -> 0.6067
+  horror -> 0.5599
+  fazkę -> 0.5418
+  kicz -> 0.5353
 
-Słowo: drużynie
-  lidze -> 0.8778
-  kadrze -> 0.8459
-  ekstraklasie -> 0.8041
-  jedenastce -> 0.7993
-  drużyny -> 0.7928
+Słowo: rozmiary
+  rozmiaru -> 0.5932
+  wzrost -> 0.5643
+  liczbę -> 0.5438
+  efekty -> 0.5421
+  ilość -> 0.5375
 
-Słowo: kocha
-  kocham -> 0.7529
-  kochają -> 0.7062
-  szanuje -> 0.7032
-  kochamy -> 0.6870
-  wielbi -> 0.6793
+Słowo: sadownictwa
+  sadownictwo -> 0.7076
+  geografii -> 0.5819
+  oświaty -> 0.5439
+  ziemniaków -> 0.5425
+  marketingu -> 0.5195
 
-Słowo: prąd
-  gazu -> 0.6258
-  ciepło -> 0.6090
-  ciśnieniem -> 0.6032
-  płynny -> 0.5972
-  wody -> 0.5746
+Słowo: karmić
+  sadzać -> 0.7067
+  stresować -> 0.6926
+  leczyć -> 0.6578
+  popijać -> 0.6484
+  płakać -> 0.6465
 
-Słowo: przyjęła
-  przyjął -> 0.6959
-  odebrała -> 0.6583
-  weszła -> 0.6198
-  nosiła -> 0.6130
-  zebrała -> 0.6002
+Słowo: popierdoliło
+  odpierdoliło -> 0.7393
+  pomyliło -> 0.7281
+  jebie -> 0.6995
+  chuj -> 0.6797
+  skurwysynie -> 0.6769
 
-Słowo: zielonym
-  białym -> 0.8631
-  żółto -> 0.7019
-  białe -> 0.6285
-  białego -> 0.6133
-  zielone -> 0.6033
+Słowo: emeryta
+  rolnika -> 0.7300
+  adwokata -> 0.6460
+  emerytury -> 0.6283
+  emerytura -> 0.6162
+  chłopa -> 0.6091
 
-Słowo: powiadam
-  tedy -> 0.7774
-  zaręczam -> 0.6881
-  mówcie -> 0.6811
-  mówicie -> 0.6548
-  powie -> 0.6490
+Słowo: mord
+  skandal -> 0.6566
+  mordów -> 0.6373
+  wyrok -> 0.6369
+  tragiczny -> 0.5702
+  pedofila -> 0.5505
 
 Top 10 słów dla etykiety 'normal'
 
-Słowo: samoloty
-  piloci -> 0.6962
-  pociągi -> 0.6500
-  lotu -> 0.6261
-  statek -> 0.6160
-  pilot -> 0.6103
+Słowo: rozpieszczeni
+  zakompleksieni -> 0.6736
+  wygodni -> 0.6109
+  mocniejsi -> 0.6049
+  zażenowani -> 0.6007
+  starzy -> 0.5809
 
-Słowo: powiedzonko
-  słowo -> 0.6452
-  zdanie -> 0.6329
-  gówno -> 0.6027
-  hasło -> 0.5862
-  myślenie -> 0.5823
+Słowo: badamy
+  znamy -> 0.6363
+  bierzemy -> 0.6195
+  robimy -> 0.5997
+  pytamy -> 0.5790
+  określić -> 0.5687
 
-Słowo: płaczów
-  wrzasku -> 0.6579
-  okrzyków -> 0.6307
-  rozpaczy -> 0.6128
-  płacz -> 0.6084
-  szyderstwa -> 0.6041
+Słowo: delegalizacja
+  partia -> 0.5934
+  faszystowska -> 0.5926
+  kolaboracja -> 0.5832
+  afera -> 0.5548
+  komunistycznej -> 0.5513
 
-Słowo: odwaga
-  duma -> 0.7165
-  cnota -> 0.6759
-  siła -> 0.6637
-  głupota -> 0.6545
-  szczera -> 0.6382
+Słowo: ląduje
+  siedzi -> 0.7187
+  trafia -> 0.6949
+  leci -> 0.6891
+  zatrzymuje -> 0.6612
+  jedzie -> 0.6226
 
-Słowo: lastminute
-  polkowice -> 0.6813
-  mls -> 0.6496
-  cr -> 0.6435
-  energa -> 0.6374
-  czasdecyzji -> 0.6323
+Słowo: oglądnę
+  obejrzysz -> 0.7086
+  oglądnij -> 0.6980
+  oglądał -> 0.6792
+  wygram -> 0.6388
+  napiszę -> 0.6364
 
-Słowo: prawda
-  nieprawda -> 0.7501
-  wiem -> 0.6554
-  niby -> 0.6431
-  rzeczywiście -> 0.6340
-  faktycznie -> 0.6323
+Słowo: śledzisz
+  obserwujesz -> 0.7453
+  poznajesz -> 0.6502
+  czytam -> 0.6494
+  wypowiadasz -> 0.6192
+  doceniasz -> 0.6131
 
-Słowo: kompromituj
-  ośmieszaj -> 0.8256
-  kolego -> 0.6584
-  chłopie -> 0.6538
-  kompromitujesz -> 0.6537
-  mylisz -> 0.6423
+Słowo: karnym
+  karnego -> 0.7674
+  karne -> 0.7203
+  karny -> 0.6666
+  bramkarza -> 0.6082
+  wślizg -> 0.6026
 
-Słowo: legia
-  ekstraklasa -> 0.7566
-  legii -> 0.7554
-  legią -> 0.7374
-  ekstraklasy -> 0.7129
-  górnik -> 0.7079
+Słowo: wokół
+  części -> 0.5505
+  blisko -> 0.5490
+  środku -> 0.5425
+  cieniu -> 0.5168
+  stronie -> 0.5149
 
-Słowo: poniewiera
-  pluje -> 0.7014
-  wciska -> 0.6805
-  siedzi -> 0.6704
-  przebiera -> 0.6598
-  bije -> 0.6476
+Słowo: egzekutywa
+  opozycja -> 0.6554
+  komisja -> 0.6120
+  partia -> 0.5960
+  rady -> 0.5825
+  izba -> 0.5820
 
-Słowo: odprawy
-  odpraw -> 0.8037
-  zwolnienia -> 0.7056
-  wynagrodzenia -> 0.6877
-  emerytury -> 0.6817
-  kwoty -> 0.6590
+Słowo: złodziejom
+  ludziom -> 0.6675
+  wrogom -> 0.6488
+  protestującym -> 0.6359
+  komuś -> 0.6069
+  złodziei -> 0.5979

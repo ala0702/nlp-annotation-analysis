@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-DIR = '../data/word_embeddings/word2vec_embeddings'
+DIR = './data/word_embeddings/word2vec_embeddings'
 vectors_path = f'{DIR}/token_vectors_100d.npy'
 tokens_path = f'{DIR}/token_analysis_data.csv'
 
@@ -52,7 +52,7 @@ print_knn_report(top20_tokens, topn=5)
 print_knn_report(top10_hate, topn=5, label='contains harmful')
 print_knn_report(top10_normal, topn=5, label='normal')
 
-SAVE_PATH = f'../outputs/word2vec_results.txt'
+SAVE_PATH = f'./outputs/word2vec_results.txt'
 with open(SAVE_PATH, 'w', encoding='utf-8') as f:
     import sys
     sys.stdout = f

@@ -1,10 +1,10 @@
 from collections import defaultdict
 from gensim.models import KeyedVectors
-from nltk.tokenize import word_tokenize
 
 import numpy as np
 import os
 import pandas as pd
+import re
 
 
 dataAlicja = pd.read_json(f'./data/anotated_dataset/alicja.jsonl', lines=True)
@@ -15,14 +15,12 @@ dataAll = pd.concat([dataAlicja, dataBartek, dataKuba])
 dataAll.drop('Comments', axis=1, inplace=True)
 
 with open('./data./stopwords/polish.txt', 'r', encoding='utf-8') as f:
-    stopwords = set(line.strip() for line in f)
+    stopwords = set(line.strip().lower() for line in f if line.strip())
     stopwords |= {'anonymized_account', '@anonymized_account'}
 
 def preprocess(text):
-    text = text.lower()
-    tokens = word_tokenize(text, language='polish')
-    tokens = [word for word in tokens if word not in stopwords and word.isalnum()]
-    return tokens
+    tokens = re.findall(r"\b\w+\b", text.lower())
+    return [t for t in tokens if t not in stopwords and len(t) > 2 and not t.isdigit()]
 
 dataAll['tokens'] = dataAll['text'].apply(preprocess)
 
