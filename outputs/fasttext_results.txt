@@ -141,78 +141,6 @@ Słowo: grać
   ogrywać -> 0.8272
 
 
-Top 10 słów dla etykiety 'contains harmful'
-Słowo: chyba
-  bo -> 0.8960
-  ale -> 0.8545
-  akurat -> 0.8513
-  podejrzewam -> 0.8421
-  niestety -> 0.8388
-
-Słowo: jesteś
-  Jesteś -> 0.9106
-  niejesteś -> 0.9051
-  bojesteś -> 0.9014
-  Tyjesteś -> 0.8892
-  jsteś -> 0.8849
-
-Słowo: chuj
-  kurwa -> 0.8769
-  chuja -> 0.8649
-  ciul -> 0.8643
-  chuju -> 0.8510
-  pojeb -> 0.8484
-
-Słowo: jesteście
-  jesteści -> 0.9607
-  jesteścież -> 0.9275
-  jesteśc -> 0.9224
-  jesteścia -> 0.9221
-  jesteściew -> 0.9219
-
-Słowo: pis
-  lpr -> 0.8361
-  sld -> 0.8360
-  lepper -> 0.8345
-  pisu -> 0.8238
-  kaczynski -> 0.8201
-
-Słowo: jutro
-  pojutrze -> 0.9271
-  Jutro -> 0.8824
-  pojutro -> 0.8709
-  pojutrz -> 0.8434
-  pojutrza -> 0.8347
-
-Słowo: haha
-  hahaha -> 0.9687
-  hahahah -> 0.9641
-  hahahaha -> 0.9586
-  hahah -> 0.9551
-  hahahahah -> 0.9531
-
-Słowo: polaków
-  polakó -> 0.8748
-  ukrainców -> 0.8623
-  niemców -> 0.8507
-  POlaków -> 0.8449
-  polaczków -> 0.8375
-
-Słowo: pisu
-  PISu -> 0.8733
-  PiSu -> 0.8718
-  Pis-u -> 0.8592
-  Pisu -> 0.8511
-  LPRu -> 0.8407
-
-Słowo: popierdoliło
-  Popierdoliło -> 0.9570
-  wypierdoliło -> 0.9316
-  odpierdoliło -> 0.9302
-  pierdoliło -> 0.9267
-  spierdoliło -> 0.9212
-
-
 Top 10 słów dla etykiety 'normal'
 Słowo: chyba
   bo -> 0.8960
@@ -285,74 +213,74 @@ Słowo: kurwa
   chuj -> 0.8769
 
 
-Top 10 słów dla etykiety 'contains harmfulrmal'
-Słowo: ludźmi
-  ludżmi -> 0.9170
-  ludźm -> 0.9011
-  zludźmi -> 0.8601
-  ludzmi -> 0.8287
-  myślącymi -> 0.8216
+Top 10 słów dla etykiety 'contains harmful'
+Słowo: chyba
+  bo -> 0.8960
+  ale -> 0.8545
+  akurat -> 0.8513
+  podejrzewam -> 0.8421
+  niestety -> 0.8388
 
-Słowo: studiów
-  studiówi -> 0.9304
-  studió -> 0.8997
-  magisterskich -> 0.8920
-  doktoranckich -> 0.8840
-  licencjackich -> 0.8823
+Słowo: jesteś
+  Jesteś -> 0.9106
+  niejesteś -> 0.9051
+  bojesteś -> 0.9014
+  Tyjesteś -> 0.8892
+  jsteś -> 0.8849
 
-Słowo: gnoju
-  gnój -> 0.8193
-  gnojem -> 0.8073
-  gnojowisku -> 0.8032
-  gnojów -> 0.8002
-  łajna -> 0.7883
+Słowo: chuj
+  kurwa -> 0.8769
+  chuja -> 0.8649
+  ciul -> 0.8643
+  chuju -> 0.8510
+  pojeb -> 0.8484
 
-Słowo: byłem
-  ibyłem -> 0.8089
-  Jabyłem -> 0.7770
-  udzałem -> 0.7593
-  powidziałem -> 0.7528
-  Byłem -> 0.7520
+Słowo: jesteście
+  jesteści -> 0.9607
+  jesteścież -> 0.9275
+  jesteśc -> 0.9224
+  jesteścia -> 0.9221
+  jesteściew -> 0.9219
 
-Słowo: zły
-  niedobry -> 0.8551
-  Zły -> 0.8404
-  beznadziejny -> 0.8045
-  kiepski -> 0.8022
-  paskudny -> 0.7899
+Słowo: pis
+  lpr -> 0.8361
+  sld -> 0.8360
+  lepper -> 0.8345
+  pisu -> 0.8238
+  kaczynski -> 0.8201
 
-Słowo: macierewicz
-  cierewicz -> 0.9001
-  Macierewicz -> 0.8310
-  macierewicza -> 0.8254
-  maciarewicz -> 0.8226
-  macierewiczem -> 0.8001
+Słowo: jutro
+  pojutrze -> 0.9271
+  Jutro -> 0.8824
+  pojutro -> 0.8709
+  pojutrz -> 0.8434
+  pojutrza -> 0.8347
 
-Słowo: spierdolił
-  wypierdolił -> 0.9580
-  wpierdolił -> 0.9395
-  upierdolił -> 0.9378
-  dopierdolił -> 0.9344
-  odpierdolił -> 0.9288
+Słowo: haha
+  hahaha -> 0.9687
+  hahahah -> 0.9641
+  hahahaha -> 0.9586
+  hahah -> 0.9551
+  hahahahah -> 0.9531
 
-Słowo: później
-  poźniej -> 0.8541
-  potem -> 0.8020
-  póżniej -> 0.7990
-  wcześniej -> 0.7841
-  Później -> 0.7530
+Słowo: polaków
+  polakó -> 0.8748
+  ukrainców -> 0.8623
+  niemców -> 0.8507
+  POlaków -> 0.8449
+  polaczków -> 0.8375
 
-Słowo: sie
-  jakos -> 0.8142
-  wiec -> 0.8077
-  wkoncu -> 0.7949
-  siee -> 0.7927
-  siez -> 0.7863
+Słowo: pisu
+  PISu -> 0.8733
+  PiSu -> 0.8718
+  Pis-u -> 0.8592
+  Pisu -> 0.8511
+  LPRu -> 0.8407
 
-Słowo: potwierdzilo
-  potwierdziloby -> 0.9596
-  Potwierdzilo -> 0.9334
-  potwierdzalo -> 0.9297
-  potwierdzily -> 0.9235
-  potwierdzil -> 0.9225
+Słowo: popierdoliło
+  Popierdoliło -> 0.9570
+  wypierdoliło -> 0.9316
+  odpierdoliło -> 0.9302
+  pierdoliło -> 0.9267
+  spierdoliło -> 0.9212
 

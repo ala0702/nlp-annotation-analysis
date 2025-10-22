@@ -7,7 +7,7 @@ import pandas as pd
 import os
 
 
-DIR = '../data/word_embeddings/word2vec_embeddings'
+DIR = './data/word_embeddings/word2vec_embeddings'
 vectors_path = os.path.join(DIR, 'token_vectors_100d.npy')
 tokens_path = os.path.join(DIR, 'token_analysis_data.csv') 
 

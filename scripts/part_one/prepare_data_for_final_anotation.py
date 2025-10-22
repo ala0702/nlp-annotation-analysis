@@ -2,9 +2,9 @@ import json
 import os
 import pandas as pd
 
-iteration1 = pd.read_json(f'../data/iteration1_annotations/sample1_doccano.jsonl', lines=True)
-iteration2 = pd.read_json(f'../data/iteration2_annotations/sample2_doccano.jsonl', lines=True)
-full_dataset = pd.read_json(f'../data/full_dataset_annotations/full_dataset_doccano.jsonl', lines=True)
+iteration1 = pd.read_json(f'../../data/iteration1_annotations/sample1_doccano.jsonl', lines=True)
+iteration2 = pd.read_json(f'../../data/iteration2_annotations/sample2_doccano.jsonl', lines=True)
+full_dataset = pd.read_json(f'../../data/full_dataset_annotations/full_dataset_doccano.jsonl', lines=True)
 
 texts_to_drop = pd.concat([iteration1['text'], iteration2['text']]).unique()
 indices_to_drop = full_dataset[full_dataset['text'].isin(texts_to_drop)].index

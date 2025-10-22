@@ -29,7 +29,7 @@ labels = labels1 + labels2 + labels3
 print(f"Liczba komentarzy: {len(texts)}")
 
 
-def load_stopwords(filepath="data/stopwords/polish.txt"):
+def load_stopwords(filepath="./data/stopwords/polish.txt"):
     with open(filepath, "r", encoding="utf-8") as f:
         stopwords = set(line.strip().lower() for line in f if line.strip())
     # Dodajmy kilka dodatkowych uniwersalnych słów i symboli
@@ -49,7 +49,7 @@ for t in texts:
 
 print(f"Liczba unikalnych słów: {len(words)}")
 
-ft_model = load_facebook_model(r"C:\Users\ALA\Downloads\kgr10.plain.skipgram.dim100.neg10.bin")
+ft_model = load_facebook_model(r"./models/kgr10.plain.skipgram.dim100.neg10.bin")
 wv = ft_model.wv
 
 word_vectors = {}
@@ -75,7 +75,7 @@ fig_words = px.scatter(
 )
 fig_words.update_traces(textposition='top center')
 fig_words.show()
-fig_words.write_html("outputs/tsne_fasttext_words.html")
+fig_words.write_html("./outputs/tsne_fasttext_words.html")
 
 all_tokens = []
 for t in texts:
@@ -132,10 +132,10 @@ for label in labels_set:
     results["labels_top_words"][label] = label_results
 
 # Save results as JSON and text
-with open("outputs/fasttext_results.json", "w", encoding="utf-8") as f:
+with open("./outputs/fasttext_results.json", "w", encoding="utf-8") as f:
     json.dump(results, f, ensure_ascii=False, indent=2)
 
-with open("outputs/fasttext_results.txt", "w", encoding="utf-8") as f:
+with open("./outputs/fasttext_results.txt", "w", encoding="utf-8") as f:
     f.write("Top 20 najczęstszych słów w całym korpusie\n\n")
     for w, sims in results["global_top_words"].items():
         f.write(f"Słowo: {w}\n")
@@ -159,5 +159,5 @@ summary = {
     "labels": list(labels_set)
 }
 
-with open("outputs/summary.json", "w", encoding="utf-8") as f:
+with open("./outputs/summary.json", "w", encoding="utf-8") as f:
     json.dump(summary, f, ensure_ascii=False, indent=2)

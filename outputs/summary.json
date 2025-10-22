@@ -4,8 +4,7 @@
   "words_in_model": 5884,
   "words_missing_in_model": -5874,
   "labels": [
-    "contains harmful",
     "normal",
-    "contains harmfulrmal"
+    "contains harmful"
   ]
 }
