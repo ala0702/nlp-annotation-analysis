@@ -40,18 +40,18 @@ for index, row in dataAll.iterrows():
     label = row['label']
     tokens = row['tokens']
 
-    is_hate = (str(label).lower() == 'contains harmful')
+    is_hate = 'contains harmful' in label
 
     for token in set(tokens):
         token_counts[token]['total'] += 1
         if is_hate:
             token_counts[token]['hate'] += 1
 
-    hate_stats_list = []
-    for token, counts in token_counts.items():
-        if counts['total'] > 0:
-            ratio = counts['hate'] / counts['total']
-            hate_stats_list.append({'token': token, 'Total_Count': counts['total'], 'Hate_Ratio': ratio})
+hate_stats_list = []
+for token, counts in token_counts.items():
+    if counts['total'] > 0:
+        ratio = counts['hate'] / counts['total']
+        hate_stats_list.append({'token': token, 'Total_Count': counts['total'], 'Hate_Ratio': ratio})
     
 hate_stats_df = pd.DataFrame(hate_stats_list)
 
