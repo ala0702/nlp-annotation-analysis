@@ -7,14 +7,14 @@ import os
 import pandas as pd
 
 
-dataAlicja = pd.read_json(f'../data/anotated_dataset/alicja.jsonl', lines=True)
-dataBartek = pd.read_json(f'../data/anotated_dataset/bartek.jsonl', lines=True)
-dataKuba = pd.read_json(f'../data/anotated_dataset/kuba.jsonl', lines=True)
+dataAlicja = pd.read_json(f'./data/anotated_dataset/alicja.jsonl', lines=True)
+dataBartek = pd.read_json(f'./data/anotated_dataset/bartek.jsonl', lines=True)
+dataKuba = pd.read_json(f'./data/anotated_dataset/kuba.jsonl', lines=True)
 
 dataAll = pd.concat([dataAlicja, dataBartek, dataKuba])
 dataAll.drop('Comments', axis=1, inplace=True)
 
-with open('../data./stopwords/polish.txt', 'r', encoding='utf-8') as f:
+with open('./data./stopwords/polish.txt', 'r', encoding='utf-8') as f:
     stopwords = set(line.strip() for line in f)
     stopwords |= {'anonymized_account', '@anonymized_account'}
 
@@ -59,7 +59,7 @@ hate_stats_df = pd.DataFrame(hate_stats_list)
 
 
 
-model_path = '../models/nkjp+wiki-forms-all-100-skipg-ns.txt.gz'
+model_path = './models/nkjp+wiki-forms-all-100-skipg-ns.txt.gz'
 word_vectors = KeyedVectors.load_word2vec_format(model_path, binary=False)
 
 print(f"\nŁadowanie modelu Word2Vec zakończone.")
@@ -82,7 +82,7 @@ print(f"Liczba tokenów OOV (bez wektora): {oov_count}")
 # Wymiar macierzy: (Liczba tokenów, 100)
 print(f"Macierz wektorów do zapisu ma wymiar: {vectors_matrix.shape}")
 
-SAVE_DIR = '../data/word_embeddings/word2vec_embeddings'
+SAVE_DIR = './data/word_embeddings/word2vec_embeddings'
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 # macierz wektorów

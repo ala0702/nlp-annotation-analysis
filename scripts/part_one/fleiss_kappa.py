@@ -6,9 +6,9 @@ import sys
 
 iteration = sys.argv[1]
 
-dataAlicja = pd.read_json(f'../data/{iteration}/alicja.jsonl', lines=True)['label'].apply(lambda x: x[0]).to_numpy()
-dataBartek = pd.read_json(f'../data/{iteration}/bartek.jsonl', lines=True)['label'].apply(lambda x: x[0]).to_numpy()
-dataKuba = pd.read_json(f'../data/{iteration}/kuba.jsonl', lines=True)['label'].apply(lambda x: x[0]).to_numpy()
+dataAlicja = pd.read_json(f'../../data/{iteration}/alicja.jsonl', lines=True)['label'].apply(lambda x: x[0]).to_numpy()
+dataBartek = pd.read_json(f'../../data/{iteration}/bartek.jsonl', lines=True)['label'].apply(lambda x: x[0]).to_numpy()
+dataKuba = pd.read_json(f'../../data/{iteration}/kuba.jsonl', lines=True)['label'].apply(lambda x: x[0]).to_numpy()
 
 data = np.array([dataAlicja, dataBartek, dataKuba]).T
 
