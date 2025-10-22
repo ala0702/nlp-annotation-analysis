@@ -22,7 +22,7 @@ X_pca = PCA(n_components=50, random_state=42).fit_transform(X_tokens)
 tsne = TSNE(n_components=2, 
             random_state=42, 
             perplexity=50, 
-            n_iter=500, 
+            # n_iter=500, 
             init='pca', 
             learning_rate='auto')
 X_2d = tsne.fit_transform(X_pca)

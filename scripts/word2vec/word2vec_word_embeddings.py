@@ -96,3 +96,11 @@ final_tokens_df.fillna({'Total_Count': 0, 'Hate_Ratio': 0}, inplace=True)
 tokens_path = os.path.join(SAVE_DIR, 'token_analysis_data.csv')
 final_tokens_df.to_csv(tokens_path, index=False)
 
+sentence_tokens_path = os.path.join(SAVE_DIR, 'sentence_token_analysis_data.csv')
+
+sentence_df = pd.DataFrame()
+sentence_df["tokens"] = dataAll["tokens"]
+sentence_df["raw"] = dataAll["text"]
+sentence_df["label"] = dataAll["label"]
+sentence_df.to_csv(sentence_tokens_path, index=False)
+
