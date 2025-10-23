@@ -28,7 +28,7 @@ Tak — widać bardzo wyraźne tendencje.
 | :----------------------- | :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **contains harmful**     | chuj, popierdoliło, pis, polaków, pisu       | Wulgaryzmy, mocne nacechowanie emocjonalne, tematy polityczne i narodowościowe, które często wywołują skrajne opinie.                                                                                                              |
 | **normal**               | wiem, sie, mogę, wisła, meczu, masz          | Neutralne, popularne słowa konwersacyjne oraz powszechne tematy (np. sport). _Uwaga: Słowo `kurwa` też tu występuje, co sugeruje, że ta lista to "najczęstsze słowa w dokumentach 'normal'", a nie "słowa unikalne dla 'normal'"_. |
-| **contains harmfulrmal** | zły, gnoju, spierdolił, macierewicz, studiów | Słowa nacechowane negatywnie (`zły`, `gnoju`), wulgarne (`spierdolił`) oraz specyficzne tematy (polityka, edukacja), które mogą być pejoratywne w kontekście.                                                                      |
+                                                                     |
 
 Widać, że embeddingi grupują słowa zgodnie z ich tematem i tonem,
 czyli pośrednio odwzorowują anotację. Nie są to jednak klastry czysto emocjonalne — raczej tematyczne (sport, polityka, wulgaryzmy).
