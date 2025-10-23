@@ -47,6 +47,7 @@ for id, sentence in sentences_df.iterrows():
                 "raw":sentence["raw"],
                 "tokens":",".join(sentence["tokens"]),
                 "senLength": len(sentence["tokens"]),
+                "label":sentence["label"]
             }
             )
     
@@ -72,31 +73,39 @@ df_tsne = pd.DataFrame(X_2d, columns=['TSNE-1', 'TSNE-2'])
 df_tsne['raw'] = sentence_y_df['raw'] 
 
 df_final = pd.merge(df_tsne, sentence_y_df, on='raw', how='inner')
+df_final['label_clean'] = df_final['label'].astype(str)
 
+df_final['label_clean'] = df_final['label_clean'].str.strip("[]'").str.replace("'", "")
+print(df_final["label_clean"])
 print(f"Dane do wizualizacji gotowe: {len(df_final)} tokenów.")
 
 alt.data_transformers.disable_max_rows()
 tooltip_list = [
     'raw', 
     alt.Tooltip('senLength', format='.3f', title='Długość zdania'), 
-    # alt.Tooltip('Total_Count', title='Wystąpienia')
+    alt.Tooltip('label_clean', title='oznaczenie')
 ]
 
 chart = alt.Chart(df_final).mark_circle(size=60, opacity=0.8).encode(
     x=alt.X('TSNE-1', title='t-SNE Wymiar 1'),
     y=alt.Y('TSNE-2', title='t-SNE Wymiar 2'),
     
-    color=alt.Color('senLength', 
-                    scale=alt.Scale(range='heatmap', domain=[0, maxlen]), 
-                    title='Długość zdania'), 
+    # color=alt.Color('senLength', 
+    #                 scale=alt.Scale(range='heatmap', domain=[0, maxlen]), 
+    #                 title='Długość zdania'), 
     
-    # size=alt.Size('Total_Count', 
-    #               scale=alt.Scale(range=[10, 300], domain=[df_final['Total_Count'].min(), df_final['Total_Count'].max()]),
-    #               title='Całkowita Liczba Wystąpień'),
+    color=alt.Color(
+        'label_clean',
+        scale=alt.Scale(
+            domain=["normal", "contains harmful"],
+            range=['blue', 'red']  # Different colors for each label
+        ),
+        title='Etykieta'
+    ),
     
     tooltip=tooltip_list
 ).properties(
-    title=f"t-SNE Osadzeń Słów (Sentence Embeddings) - 100D Skip-gram"
+    title=f"t-SNE Osadzeń Zdań (Sentence Embeddings) - 100D Skip-gram"
 ).interactive() 
 
-chart.save('./plots/word2vec_tsne_interactive_sentences.json')
+chart.save('./plots/word2vec_tsne_interactive_sentences_clrs.json')

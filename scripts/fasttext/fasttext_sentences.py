@@ -64,8 +64,9 @@ print(f"Liczba słów nieznalezionych w modelu: {len(words) - len(word_vectors)}
 X_sentences = []
 y_sentences = []
 colors = []
+plotlabels = []
 
-for text in texts:
+for idx,text in enumerate(texts):
     arr = np.zeros(100)
     tokencount = 0 
     for token in tokenize(text):
@@ -75,6 +76,10 @@ for text in texts:
         X_sentences.append(arr/tokencount)
         y_sentences.append(text)
         colors.append(tokencount)
+        if labels[idx]=="normal":
+            plotlabels.append("circle")
+        else:
+            plotlabels.append("triangle-up")
 
 X_sentences = np.array(X_sentences)
 
@@ -87,7 +92,9 @@ fig_sentences = px.scatter(
     y=X_2d_sentences[:, 1],
     hover_data={'text': y_sentences},
     color=colors,  # Add color mapping based on sentence length
-    color_continuous_scale='viridis',  # Choose a colormap
+    color_continuous_scale='magma',
+    symbol=plotlabels,  # <-- different marker shapes by label
+    symbol_map={"normal": "circle", "contains harmful": "triangle-up"},
     title="t-SNE FastText - Sentence Embeddings with Length Coloring"
 )
 
